@@ -2,9 +2,12 @@
 #include <stdio.h>
 #include <time.h>
 
-/*
- * main-entry for all my functions at run time
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
