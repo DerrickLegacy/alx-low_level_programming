@@ -1,14 +1,9 @@
 #include "main.h"
 
 /**
- * main- prints alphabetical letters
+ * ints alphabetical letters
  * Return:Always 0
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 void print_alphabet(void)
 {
 	char x;
