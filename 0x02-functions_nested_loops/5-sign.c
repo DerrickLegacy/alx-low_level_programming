@@ -5,7 +5,7 @@
  * Return: 1 if the number is greater than zero,
  *         0 if the number is zero,
  *         -1 if the number is less than zero.
- * n - an integer input for function 
+ * n - an integer input for function
  */
 int print_sign(int n)
 {
