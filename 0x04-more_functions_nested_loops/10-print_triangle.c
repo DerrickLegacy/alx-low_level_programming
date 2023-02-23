@@ -11,18 +11,25 @@ void print_triangle(int size)
 	int i;
 	int space;
 	int x;
-
-	for (i = 1 ; i <= size ; i++)
+	
+	if (size > 0)
 	{
-		/*creating space*/
-		for (space = 1 ; space <= size ; space++)
+		for (i = 1 ; i <= size ; i++)
 		{
-			_putchar(' ');
+			/*creating space*/
+			for (space = 1 ; space <= size ; space++)
+			{
+				_putchar(' ');
+			}
+			/*printing the stars*/
+			for (x = i ; x <= space ; x++)
+			{
+				_putchar('#');
+			}
 		}
-		/*printing the stars*/
-		for (x = i ; x <= space ; x++)
-		{
-			_putchar('#');
-		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
