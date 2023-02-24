@@ -10,19 +10,17 @@ void print_triangle(int size)
 {
 	int i;
 	int space;
-	int x;
-	
+	int hash;
+
 	if (size > 0)
 	{
-		for (i = 1 ; i <= size ; i++)
+		for (i = size ; i >= 1 ; i--)
 		{
-			/*creating space*/
-			for (space = 1 ; space <= size ; space++)
+			for (space = 1 ; space < i ; space++)
 			{
-				_putchar(' ');
+				_putchar('_');
 			}
-			/*printing the stars*/
-			for (x = i ; x <= space ; x++)
+			for (hash = size ; hash >= i ; hash--)
 			{
 				_putchar('#');
 			}
