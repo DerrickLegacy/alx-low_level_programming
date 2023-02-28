@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+#include <stdlib.h>
 /**
  * File_name: main.h
  * Auth: DerrickLegacy
@@ -8,6 +8,7 @@
  */
 
 int _putchar(char c);
+int _atoi(char *s);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
