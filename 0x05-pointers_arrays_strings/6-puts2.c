@@ -4,18 +4,15 @@
  * puts2 - Prints even characters
  * @str: Input to the function
  */
-
 void puts2(char *str)
-{	int i;
-	int length;
+{
+	int index = 0, len = 0;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
-	{
-		length++;
-	}
-	for (i = 0 ; i < length ; i += 2)
-	{
-		_putchar(str[i]);
-	}
+	while (str[index++])
+		len++;
+
+	for (index = 0; index < len; index += 2)
+		_putchar(str[index]);
+
 	_putchar('\n');
 }
