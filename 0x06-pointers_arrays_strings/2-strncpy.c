@@ -23,11 +23,10 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[index] = src[index];
 		}
-		else
-		{
-			dest[src_length] = '\0';
-			break;
-		}
+	}
+	for (index = src_length ; index < n ; index++)
+	{
+		dest[index] = '\0';
 	}
 	return (dest);
 }
