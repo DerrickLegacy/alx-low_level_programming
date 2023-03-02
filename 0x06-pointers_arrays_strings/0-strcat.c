@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strcat - Joins two words or sentences together.
@@ -10,7 +9,14 @@
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
-	_putchar('\n');
-	return (0);
+	int index = 0;
+	int dest_length = 0;
+
+	while (dest[index++] != '\0')
+		dest_length++;
+
+	for (index = 0; src[index] != '\0'; index++)
+		dest[dest_length++] = src[index];
+
+	return (dest);
 }
