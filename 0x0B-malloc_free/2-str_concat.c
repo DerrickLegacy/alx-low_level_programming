@@ -11,39 +11,34 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-	int len1 = 0, len2 = 0, k = 0, len_total = 0;
+	int len1 = 0, len2 = 0, k = 0, l = 0;
 	char *s;
-	
-	/* Checking whether strings are not empty */
+
 	if (s1 == NULL)
 		s1 = "";
 
 	if (s2 == NULL)
 		s2 = "";
-	
-	/* Detriming length of each string then total length */
+
 	while (s1[len1])
 		len1++;
 
 	while (s2[len2])
 		len2++;
 
-	len_total = len1 + len2;
-	/* Reserving memory equivalent to the two strings */
-	s = malloc((sizeof(char) * len_total) + 1);
+	l = len1 + len2;
+	s = malloc((sizeof(char) * l) + 1);
 
 	if (s == NULL)
 		return (NULL);
-
 	len2 = 0;
 
-	while (k < len_total)
+	while (k < l)
 	{
 		if (k <= len1)
 			s[k] = s1[k];
 
-		if (k >= len2)
-		{
+		if (k >= len1)
 			s[k] = s2[len2];
 			len2++;
 		}
